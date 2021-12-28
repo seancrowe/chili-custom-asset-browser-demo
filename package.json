@@ -1,0 +1,33 @@
+{
+  "name": "chili-custom-asset-browser-demo",
+  "version": "0.0.1",
+  "description": "A demo on a custom asset browser",
+  "keywords": [
+    "react",
+    "starter"
+  ],
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@seancrowe/chiliconnector-base": "^2.0.0-rc.2.5",
+    "antd": "^4.17.4",
+    "fast-xml-parser": "^4.0.0-beta.8",
+    "parcel": "^2.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "parcel ./index.html",
+    "build": "parcel build ./src/index.jsx --no-source-maps",
+    "build-large": "parcel build ./src/index.jsx --no-optimize"
+  },
+  "browserslist": [
+    ">5%"
+  ],
+  "targets": {
+    "default": {
+      "distDir": "./dir-parcel"
+    }
+  }
+}
