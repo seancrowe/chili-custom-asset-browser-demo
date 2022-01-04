@@ -27,7 +27,7 @@
   ],
   "targets": {
     "default": {
-      "distDir": "./dir-parcel"
+      "distDir": "./www"
     }
   }
 }
