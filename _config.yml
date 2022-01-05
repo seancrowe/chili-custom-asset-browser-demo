@@ -1,1 +1,2 @@
 theme: jekyll-theme-hacker
+inlcude: ["testing/create_your_document.md", "testing/add_the_javascript.md", "testing/launch_the_customer_browser.md"]
