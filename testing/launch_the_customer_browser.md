@@ -3,4 +3,4 @@ If you did everything correctly, you should be able to reload the document and l
 
 If you have any trouble, you can find a simple demo CHILI package here: [Image Select Custom.zip](./assets/Image%20Select%20Custom.zip)
 
-### [Next up 2.1 The Importance of index.js](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/the_importance_of_index.md)
+### [Next up 2.1 The Importance of index.js](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/the_importance_of_index)

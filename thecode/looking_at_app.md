@@ -52,4 +52,4 @@ The FolderBrowser component is what will render the folders that can be selected
 ## AssetViewer
 The AssetViewer component is what will render the assets in a particular folder path. You can read more about it here:
 
-### [Next up 2.3 Understanding FileBrowser Component](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/understanding_fileBrowser_component.md)
+### [Next up 2.3 Understanding FileBrowser Component](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/understanding_fileBrowser_component)

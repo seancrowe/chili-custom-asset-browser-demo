@@ -1,6 +1,6 @@
 # 1.2 Add The Javascript
 ## Button Variable Actions
-So as we saw from [1.1 Create Your Document](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/create_your_document.md) we need to create button variables for each image variable. Those button variables will have at least two buttons: and add button and a remove button.
+So as we saw from [1.1 Create Your Document](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/create_your_document) we need to create button variables for each image variable. Those button variables will have at least two buttons: and add button and a remove button.
 
 We can add an action to each button and inside the action we can add JavaScript by using the execute command.
 <img src="./assets/editor_javascript.png" />
@@ -40,4 +40,4 @@ Overall you have three methods to the load the JavaScrip for the demo:
 - in a document action using the entire script
 - in a document action to create a ``<script>`` tag to load the JavaScript externally
 
-### [Next up 1.3 Launch The Customer Browser](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/launch_the_customer_browser.md)
+### [Next up 1.3 Launch The Customer Browser](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/launch_the_customer_browser)

@@ -30,13 +30,13 @@ You are meant to follow the below steps while testing in the BackOffice.
 *The documentation assumes you have experience with CHILI publisher.*
 
 #### Section 1: Testing
-- [1.1 Create Your Document](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/create_your_document.md)
-- [1.2 Add The JavaScript](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/add_the_javascript.md)
-- [1.3 Launch The Customer Browser](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/launch_the_customer_browser.md)
+- [1.1 Create Your Document](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/create_your_document)
+- [1.2 Add The JavaScript](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/add_the_javascript)
+- [1.3 Launch The Customer Browser](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/launch_the_customer_browser)
   
 #### Section 2: The Code
-- [2.1 The Importance of index.js](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/the_importance_of_index.md)
-- [2.2 Looking at App.jsx](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/looking_at_app.md)
-- [2.3 Understanding FileBrowser Component](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/understanding_fileBrowser_component.md)
-- [2.4 Understanding AssetViewer Component](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/understanding_assetviewer_component.md)
-- [2.5 Building For Use](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/building_for_use.md)
+- [2.1 The Importance of index.js](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/the_importance_of_index)
+- [2.2 Looking at App.jsx](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/looking_at_app)
+- [2.3 Understanding FileBrowser Component](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/understanding_fileBrowser_component)
+- [2.4 Understanding AssetViewer Component](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/understanding_assetviewer_component)
+- [2.5 Building For Use](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/building_for_use)

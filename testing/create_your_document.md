@@ -24,4 +24,4 @@ For example, in the image below, we have two image variables in the document. Th
 <img src="./assets/editor_image_exampleVars.png" />
 
 
-### [Next up 1.2 Add The Javascript](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/add_the_javascript.md)
+### [Next up 1.2 Add The Javascript](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/add_the_javascript)

@@ -178,4 +178,4 @@ const onSelect = (keys) => {
 ```
 We utilized getNodeBaseOnKey to get the original node, and then pass the path of that node into the callback function updateAssetViewer which will then pass it up parent component.
 
-### [Next up 2.4 Understanding_AssetViewer_Component](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/understanding_assetviewer_component.md)
+### [Next up 2.4 Understanding_AssetViewer_Component](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/understanding_assetviewer_component)

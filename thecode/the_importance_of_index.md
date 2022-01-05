@@ -92,4 +92,4 @@ Here we mount and render the React component. In retrospect, it seems silly to c
 
 However, the important part is that we pass all the values from getChiliObject and getChiliDetails functions into the App component.
 
-### [Next up 2.2 Looking at App.jsx](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/looking_at_app.md)
+### [Next up 2.2 Looking at App.jsx](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/looking_at_app)

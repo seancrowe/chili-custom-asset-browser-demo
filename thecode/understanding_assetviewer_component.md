@@ -262,4 +262,4 @@ onCancel allows us to call a function when the Modal's cancel elements are selec
 </Modal>
 ```
 
-### [Next up 2.5 Building For Use](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/building_for_use.md)
+### [Next up 2.5 Building For Use](https://seancrowe.github.io/chili-custom-asset-browser-demo/thecode/building_for_use)
