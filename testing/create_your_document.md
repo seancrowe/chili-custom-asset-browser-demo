@@ -1,17 +1,14 @@
-
-
-
 # 1.1 Create Your Document
 To test this custom asset browser, you need a document to test out. For the simplest use case, you just need a document with an image variable and an image frame tied to that variable.
 
 You will want to create two variables:
- - image variable (using CHILI DAM)
- - button variable
+- image variable (using CHILI DAM)
+- button variable
 
-In the below image I created two variables: Front Image as an image variable and the Front Image Button as a button variable. 
+In the below image I created two variables: Front Image as an image variable and the Front Image Button as a button variable.
 <img src="./assets/editor_variables.png"/>
 
-The Front Image image variable is tied to the frame in the document (see picture above). 
+The Front Image image variable is tied to the frame in the document (see picture above).
 
 With our button variable, we are going to add two buttons. One for making the custom asset browser pop-up and the second for hiding the asset browser.
 

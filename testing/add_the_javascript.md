@@ -1,5 +1,3 @@
-
-
 # 1.2 Add The Javascript
 ## Button Variable Actions
 So as we saw from [1.1 Create Your Document](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/create_your_document.md) we need to create button variables for each image variable. Those button variables will have at least two buttons: and add button and a remove button.
@@ -22,7 +20,7 @@ However, if you test things out now, ``window.launchCustomAssetBrowser()`` will 
 
 We need to load the JavaScript for the entire demo before the document loads. I strongly suggest doing this in your integration. However, you would need to add the script to the window of the iframe.
 
-📃**Note:** 
+📃**Note:**
 *Because the demo makes REST calls directly to CHILI, the code must run inside the iframe. If you want to run this code outside the iframe, you would need to use middleware to shuttle the calls from frontend -> middleware -> CHILI. The reason is CORS. CHILI publish Online only accepts calls from the exact same origin.*
 
 A much easier, but more tedious method is to add the JavaScript in a document event action on DocumentFullyLoaded or DocumentFullyRendered.
@@ -35,11 +33,11 @@ tag.src = "https://demo.example.com/demoAssetBrowser.js";
 document.getElementsByTagName("head")[0].appendChild(tag);
 ```
 
-Loading the JavaScript externally has the benefit of being able to keep all your documents in sync during JavaScript updates. However, it has the complexity of woring about CORS.
+Loading the JavaScript externally has the benefit of being able to keep all your documents in sync during JavaScript updates. However, it has the complexity of working about CORS.
 
 Overall you have three methods to the load the JavaScrip for the demo:
- - within the integration
- - in a document action using the entire script
- - in a document action to create a ``<script>`` tag to load the JavaScript externally
+- within the integration
+- in a document action using the entire script
+- in a document action to create a ``<script>`` tag to load the JavaScript externally
 
 ### [Next up 1.3 Launch The Customer Browser](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/launch_the_customer_browser.md)
