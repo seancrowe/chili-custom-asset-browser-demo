@@ -3,7 +3,7 @@
 So as we saw from [1.1 Create Your Document](https://seancrowe.github.io/chili-custom-asset-browser-demo/testing/create_your_document) we need to create button variables for each image variable. Those button variables will have at least two buttons: and add button and a remove button.
 
 We can add an action to each button and inside the action we can add JavaScript by using the execute command.
-<img src="./assets/editor_javascript.png" />
+<img src="../assets/editor_javascript.png" />
 
 For the add button, which in 1.1 we called Set Front Image, we want our JavaScript to open the asset browser. We do this by calling the launchCustomAssetBrowser method.
 ```javascript
