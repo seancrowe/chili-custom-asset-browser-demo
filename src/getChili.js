@@ -13,7 +13,7 @@ export function getChiliDetails(options) {
 
   let params = {};
   url.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-    params[key] = value;
+    params[key.toLowerCase()] = value;
   });
 
   let indexOfEditor = url.indexOf("editor") - 1;
@@ -32,6 +32,6 @@ export function getChiliDetails(options) {
       environment != null
         ? environment
         : smallUrl.slice(indexOfSlash, smallUrl.length),
-    apiKey: apiKey != null ? apiKey : params["apiKey"],
+    apiKey: apiKey != null ? apiKey : params["apikey"],
   };
 }
