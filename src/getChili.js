@@ -35,3 +35,41 @@ export function getChiliDetails(options) {
     apiKey: apiKey != null ? apiKey : params["apikey"],
   };
 }
+
+export function getChiliVariableBasePath(editorObject, variableName) {
+  const variable = editorObject.GetObject("document.variables[" + variableName + "]");
+
+  if (variable == null) {
+    throw new Error("Cannot find variable " + variableName);
+  }
+
+  if (variable.imageFromPulldown === "false") {
+    return "";
+  } else {
+
+    const pathVariablePath = variable.imagePulldownDirectoryVariable;
+
+    if (pathVariablePath == null) {
+
+      switch (variable.imagePulldownDirectory) {
+        case "%doc%":
+          return editorObject.GetObject("document.documentAssetDir");
+        case "%user%":
+          return editorObject.GetObject("document.userAssetDir");
+        case "%usergroup%":
+          return editorObject.GetObject("document.usergroupAssetDir");
+        default:
+          return variable.imagePulldownDirectory;
+      }
+    }
+
+    const pathVariable = editorObject.GetObject(pathVariablePath);
+
+    if (pathVariable == null) {
+      throw new Error("Cannot find variable that defines the path on " + pathVariable);
+    }
+
+    return pathVariable.value;
+
+  }
+}

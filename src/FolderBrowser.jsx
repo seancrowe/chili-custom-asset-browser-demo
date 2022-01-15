@@ -37,25 +37,27 @@ function getNodeBasedOnKey(list, key) {
   return currentNode;
 }
 
-export default function FolderBrowser({chiliUrl, apiKey, updateAssetViewer}) {
+export default function FolderBrowser({chiliUrl, apiKey, updateAssetViewer, basePath}) {
   const [treeData, setTreeData] = useState([]);
+  const [awaitingTreeData, setAwaitingTreeData] = useState(false);
 
   useEffect(() => {
+    setAwaitingTreeData(true);
     const connector = new ChiliConnector(chiliUrl);
     connector.apiKey = apiKey;
     connector.api
       .resourceGetTreeLevel({
         resourceName: "Assets",
-        parentFolder: "",
+        parentFolder: basePath,
         numLevels: 1,
         includeSubDirectories: "true",
         includeFiles: "false",
       })
       .then((response) => {
-        //console.log(response);
 
         response.json().then((json) => {
-          const folders = Array.isArray(json.item) ? json.item : [json.item];
+          console.log(json);
+          const folders = (json.item == null) ? [] : Array.isArray(json.item) ? json.item : [json.item];
 
           //console.log(folders);
 
@@ -69,14 +71,16 @@ export default function FolderBrowser({chiliUrl, apiKey, updateAssetViewer}) {
               };
             })
           );
+          setAwaitingTreeData(false);
         });
       });
-  }, []);
+  }, [basePath]);
 
   const loadData = async ({key, path, children}) => {
     if (children != null) {
       return;
     }
+    setAwaitingTreeData(true);
     const connector = new ChiliConnector(chiliUrl);
     connector.apiKey = apiKey;
     const response = await connector.api.resourceGetTreeLevel({
@@ -111,6 +115,7 @@ export default function FolderBrowser({chiliUrl, apiKey, updateAssetViewer}) {
     );
 
     setTreeData(treeDataUpdated);
+    setAwaitingTreeData(false);
   };
 
   const onSelect = (keys) => {
@@ -119,7 +124,7 @@ export default function FolderBrowser({chiliUrl, apiKey, updateAssetViewer}) {
     updateAssetViewer(node.path);
   };
 
-  if (treeData.length === 0) {
+  if (awaitingTreeData) {
     return (
       <div
         style={{
